@@ -7,23 +7,23 @@ In this second Udacity Data Engineering nanodegree project an Apache Cassandra d
 
 The raw data used for creating the tables and answering the business questions is stored in a directory of CSV files. The data is partitionated by dates. These are the features from the data and the respective data types:
 
-artist string,
-auth string,
-firstName string,
-gender char,
-itemInSession int,
-lastName string,
-length float,
-level string,
-location string,
-method string,
-page string,
-registration float,
-sessionId int,
-song string,
-status int,
-ts float,
-userId int,
+**artist** *string*,<br>
+**auth** *string*,<br>
+**firstName** *string*,<br>
+**gender** *char*,<br>
+**itemInSession** *int*,<br>
+**lastName** *string*,<br>
+**length** *float*,<br>
+**level** *string*,<br>
+**location** *string*,<br>
+**method** *string*,<br>
+**page** *string*,<br>
+**registration** *float*,<br>
+**sessionId** *int*,<br>
+**song** *string*,<br>
+**status** *int*,<br>
+**ts** *float*,<br>
+**user**Id *int*,<br>
 
 ## ETL Pipeline
 
