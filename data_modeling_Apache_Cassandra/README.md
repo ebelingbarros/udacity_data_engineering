@@ -40,7 +40,7 @@ As mentioned above, the data is stored in a data folder within csv files which a
 #### 3. Give me every user name (first and last) in my music app history who listened to the song 'All Hands Against His Own'
 *"SELECT song, firstName, lastName FROM user WHERE song = 'All Hands Against His Own'"*
   
-## Project outline
+## Project structure
 
 
 
