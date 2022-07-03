@@ -39,6 +39,7 @@ By its turn, this is the format of a typical **log file**, 2018-11-12-events.jso
 
 In this project, data is modelled in a star Schema, in order to facilitate querying and analysis:  
 
+# Here Schema
 
 # Project Files
 
