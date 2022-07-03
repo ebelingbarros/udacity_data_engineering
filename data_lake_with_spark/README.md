@@ -35,7 +35,7 @@ By its turn, this is the format of a typical **log file**, 2018-11-12-events.jso
   <img width="100%" height="100%" src="https://github.com/ebelingbarros/udacity_data_engineering/blob/main/data_lake_with_spark/images/log-data.png"> 
 </p> 
 
-# Schema 
+## Schema 
 
 In this project, data is modelled in a star Schema, in order to facilitate querying and analysis:  
 
