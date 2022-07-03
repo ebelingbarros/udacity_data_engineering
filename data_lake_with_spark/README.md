@@ -10,12 +10,12 @@ In order to store their data in a data lake, Sparkify is planning to build an ET
 
 The data used in this project is Stored in Amazon S3, in two directories:
 
-Song data: s3://udacity-dend/song_data
-Log data: s3://udacity-dend/log_data
+**Song data**: s3://udacity-dend/song_data<br>
+**Log data**: s3://udacity-dend/log_data
 
 See below an example of what a single **song** file, TRAABJL12903CDCF1A.json, looks like.
 
-`{
+```{
     "num_songs": 1, 
     "artist_id": "ARJIE2Y1187B994AB7", 
     "artist_latitude": null, 
@@ -26,76 +26,48 @@ See below an example of what a single **song** file, TRAABJL12903CDCF1A.json, lo
     "title": "Der Kleine Dompfaff", 
     "duration": 152.92036, 
     "year": 0    
-}`
+}
+```
 
 By its turn, this is the format of a typical **log file**, 2018-11-12-events.json:
 
-
-
-
-
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/ebelingbarros/udacity_data_engineering/blob/main/data_lake_with_spark/images/log-data.png"> 
+</p> 
 
 # Schema 
 
-Data Modeling with Star Schema
-Star Schema for Song Play Analysis!
-
-
-Data Lake to store extracted dimentional tables
-"s3a://udacity-de-sparkify-data-lake/artists"
-"s3a://udacity-de-sparkify-data-lake/songs"
-"s3a://udacity-de-sparkify-data-lake/time"
-"s3a://udacity-de-sparkify-data-lake/users"
-"s3a://udacity-de-sparkify-data-lake/songplays"
+In this project, data is modelled in a star Schema, in order to facilitate querying and analysis:  
 
 
 # Project Files
-In addition to the data files, the project workspace includes 5 files:
 
-1. dl.cfg Contains the Secret Key for ASW access
-2. create_bucket.py Create bucket in AWS S3 to store the extracted dimentional tables.
-3. etl.py Loading song data and log data from S3 to Spark, transforms data into a set of dimensional tables, then save the table back to S3
-4. etl.ipynb Used to design ETL pipelines
-5. README.md Provides project info
+The project contains the following files:
+
+1. etl.py reads data from S3, processes that data using Spark, and writes them back to S3
+2. dl.cfg contains ther AWS credentials
 
 ## Use Instructions
 
-Configuration
-Set up a config file dl.cfg that uses the following schema. Put in the information for your IAM-Role that can read and write S3 buckets.
+In order to run the project, it is necessary to first, insert AWS credentials into the dl.cfg file
 
-[S3]
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-ETL pipeline
-Simply run the ETL script.
-
-python etl.py
-If the ETL pipeline was successful, a preview of the output data will be displayed.
-
-Configuration
-Remember to set key and secret in ./aws/dl.cfg before run etl.py
-
-[AWS]
-key =
+``` 
+[AWS]  
+key = 
 secret =
+```
 
+After this, in order to run the ETL process, run the ETL script:
 
-
-
-
-Build ETL Pipeline
-etl.py will process the entire datasets.
-
-
-
-Instruction
-Set key and secrect in dwh.cfg file
-
-
-Run create_bucket.py
-python create_bucket.py
-
-
-Use following command to start ETL process
+``` 
 python etl.py
+``` 
+
+In the event of sucess, you will see a preview of the output data.
+
+
+
+
+
+
 
