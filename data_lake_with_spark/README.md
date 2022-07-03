@@ -41,7 +41,7 @@ In this project, data is modelled in a star Schema, in order to facilitate query
 
 # Here Schema
 
-# Project Files
+## Project Files
 
 The project contains the following files:
 
