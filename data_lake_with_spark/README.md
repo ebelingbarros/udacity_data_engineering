@@ -50,7 +50,7 @@ The project contains the following files:
 
 ## Use Instructions
 
-In order to run the project, it is necessary to first, insert AWS credentials into the dl.cfg file
+1. In order to run the project, it is necessary to first, insert AWS credentials into the dl.cfg file
 
 ``` 
 [AWS]  
@@ -58,13 +58,16 @@ key =
 secret =
 ```
 
-After this, in order to run the ETL process, run the ETL script:
+2. After this, you must specify the input and output data path in the main function of etl.py
+
+
+3. Finally in order to run the ETL process, run the ETL script:
 
 ``` 
 python etl.py
 ``` 
 
-In the event of sucess, you will see a preview of the output data.
+
 
 
 
