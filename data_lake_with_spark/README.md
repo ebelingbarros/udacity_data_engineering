@@ -60,7 +60,6 @@ secret =
 
 2. After this, you must specify the input and output data path in the main function of etl.py
 
-
 3. Finally in order to run the ETL process, run the ETL script:
 
 ``` 
