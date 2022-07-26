@@ -19,7 +19,7 @@ From the two initial staging tables (**staging_songs**, which contains informati
 **artists** - artists in music database<br>
 **time** - timestamps of records in songplays broken down into specific units
 
-# Here Schema
+https://github.com/ebelingbarros/udacity_data_engineering/blob/main/data_warehouse/relationship.png
 
 ## Project files
 
