@@ -8,7 +8,7 @@ The dataset used in this project are obtained from two S3 buckets, and is stored
 
 ## Schema
 
-From the two initial staging tables (**staging_songs**, which contains information about songs and artists, and **staging_events**, which contains the user's actions while using the app, a star schema is created. It is optimized for querying and performing analyises. The schema contains the following tables:
+From the two initial staging tables (**staging_songs**, which contains information about songs and artists, and **staging_events**, which contains the user's actions while using the app), a star schema is created. It is optimized for querying and performing analyises. The schema contains the following tables:
 
 ### Fact Table
 **songplays** - records in event data associated with song plays i.e. records with page NextSong
