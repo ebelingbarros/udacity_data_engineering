@@ -69,7 +69,7 @@ def process_log_file(cur, filepath):
 
 def process_data(cur, conn, filepath, func):
     
-      """The function processes JSONs files located within a specific data directory."""
+    """The function processes JSONs files located within a specific data directory."""
         
     # get all files matching extension from directory
     all_files = []
