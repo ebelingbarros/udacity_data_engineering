@@ -1,0 +1,32 @@
+//// -- LEVEL 1
+//// -- Tables and References
+
+// Creating tables
+Table songplays as sp {
+    songplay_id INT [pk, increment] 
+    start_time TIMESTAMP 
+    user_id INT
+    level TEXT 
+    song_id VARCHAR(50) 
+    artist_id INT 
+    session_id INT 
+    location TEXT 
+    user_agent TEXT
+  
+}
+
+Table users as u{
+    user_id INT [pk] 
+    first_name TEXT 
+    last_name TEXT 
+    gender VARCHAR(1) 
+    level TEXT
+}
+
+Table songs as s{
+    song_id VARCHAR(50) [pk] 
+    title TEXT 
+    artist_id INT 
+    year INT 
+    duration FLOAT
+}
