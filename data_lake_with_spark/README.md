@@ -39,7 +39,7 @@ By its turn, this is the format of a typical **log file**, 2018-11-12-events.jso
 
 In this project, data is modelled in a star Schema, in order to facilitate querying and analysis:  
 
-# Here Schema
+https://github.com/ebelingbarros/udacity_data_engineering/blob/main/data_lake_with_spark/images/diagram.png
 
 ## Project Files
 
